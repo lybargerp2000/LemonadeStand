@@ -20,13 +20,13 @@ namespace LemonadeStand_Pat
             temperature = 65;
         }
 
-        public void AddWeatherCondition()
+        public void WeatherCondition()
         {
             weatherConditions.Add("cloudy");
             weatherConditions.Add("rainy");
             weatherConditions.Add("sunny");
            
-
         }
+        
     }
 }
