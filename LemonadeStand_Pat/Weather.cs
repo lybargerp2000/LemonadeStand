@@ -8,16 +8,16 @@ namespace LemonadeStand_Pat
 {
     class Weather
     {
-        string condition;
-        int temperature;
-        List<string> weatherConditions;
+        public string weatherCondition;
+        public int temperature;
+        public List<string> weatherConditions;
 
         public Weather()
         {
             weatherConditions = new List<string>();
             return;
-            condition = "sunny";
-            temperature = 65;
+
+
         }
 
         public void WeatherCondition()

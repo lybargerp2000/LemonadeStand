@@ -10,11 +10,23 @@ namespace LemonadeStand_Pat
     {
         public Weather weather;
         public List<Customer> customers;
+        public double PricePerCup;
+        public string weatherCondition;
+        int temperature;
 
         public Day()
         {
             weather = new Weather();
             customers = new List<Customer>();
+            return;
+        }
+
+        public void CustomerDesireOutcome()
+        {
+            if (PricePerCup < 1.0 && weatherCondition == "sunny" && temperature > 85)
+            {
+             
+            }
         }
 
 

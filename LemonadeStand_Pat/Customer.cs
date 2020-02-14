@@ -10,6 +10,8 @@ namespace LemonadeStand_Pat
     {
         public List<string> names;
         string name;
+        double PricePerCup;
+        
 
         public Customer()
         {
@@ -23,6 +25,7 @@ namespace LemonadeStand_Pat
             names.Add("Kevin");
             names.Add("Sue");
         }
+
 
 
     }
