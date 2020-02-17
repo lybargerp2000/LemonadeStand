@@ -8,25 +8,39 @@ namespace LemonadeStand_Pat
 {
     class Customer
     {
-        public List<string> names;
+        public List<string> customers;
         string name;
         double PricePerCup;
+        Cup cup;
+        int we;
         
 
         public Customer()
         {
-            names = new List<string>();
+            customers = new List<string>();
+            cup = new Cup();
             return;
         }
 
-        public void Names()
+        public void Customers()
         {
-            names.Add("Keith");
-            names.Add("Kevin");
-            names.Add("Sue");
+            customers.Add("Keith");
+            customers.Add("Kevin");
+            customers.Add("Sue");
         }
 
 
 
-    }
+        public void CustomerAction()
+        {
+           cup.CupGetBought();
+        }
+
+        public void RunTransaction()
+        {
+
+            cup.CupGetBought();
+        }
+
+    }    
 }
