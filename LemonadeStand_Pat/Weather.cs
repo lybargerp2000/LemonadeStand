@@ -11,13 +11,18 @@ namespace LemonadeStand_Pat
         public string weatherCondition;
         public int temperature;
         public List<string> weatherConditions;
+        string weatherGenerated;
+        Random weatherChoosen = new Random();
+
 
         public Weather()
         {
             weatherConditions = new List<string>();
-            Console.WriteLine("Please select weather: cloudy, rainy or sunny");
-            Console.ReadLine();
-            return;
+            
+     
+            GenerateWeather();
+
+            
 
 
         }
@@ -29,7 +34,15 @@ namespace LemonadeStand_Pat
             weatherConditions.Add("sunny");
            
         }
-        public void SelectTemperature()
+        public void GenerateWeather()
+        {
+            int val = weatherChoosen.Next(0, 17);
+            weatherCondition = weatherConditions[val];
+            Console.WriteLine(val);
+            Console.ReadLine();
+
+        }
+        public void TemperatureGenerator()
         {
 
         }

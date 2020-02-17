@@ -6,13 +6,17 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_Pat
 {
-    class Game
+    public class Game
     {
         Weather weather;
+ 
 
-     public void RunGame()
+
+        public void RunGame()
         {
             weather = new Weather();
+
+            Random random = new Random();
         }
     }
 }
