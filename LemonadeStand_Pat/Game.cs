@@ -8,5 +8,11 @@ namespace LemonadeStand_Pat
 {
     class Game
     {
+        Weather weather;
+
+     public void RunGame()
+        {
+            weather = new Weather();
+        }
     }
 }

@@ -36,11 +36,7 @@ namespace LemonadeStand_Pat
            cup.CupGetBought();
         }
 
-        public void RunTransaction()
-        {
-
-            cup.CupGetBought();
-        }
+        
 
     }    
 }

@@ -13,13 +13,14 @@ namespace LemonadeStand_Pat
         public double PricePerCup;
         public string weatherCondition;
         int temperature;
+        Cup cup;
 
 
         public Day()
         {
             weather = new Weather();
             customers = new List<Customer>();
-            new Cup();
+            cup = new Cup();
             return;
         }
 
@@ -27,8 +28,17 @@ namespace LemonadeStand_Pat
         {
             if (PricePerCup < 1.0 && weatherCondition == "sunny" && temperature > 85)
             {
-                CupGetBought();
+                cup.CupGetBought();
             }
+            else if (PricePerCup > 1.0 && weatherCondition == "cloudy" && temperature < 85)
+            {
+             
+            }
+            else if (PricePerCup > 1.0 && weatherCondition == "rainy" && temperature < 85)
+            {
+
+            }
+            Console.WriteLine(cup);
         }
 
 

@@ -15,6 +15,8 @@ namespace LemonadeStand_Pat
         public Weather()
         {
             weatherConditions = new List<string>();
+            Console.WriteLine("Please select weather: cloudy, rainy or sunny");
+            Console.ReadLine();
             return;
 
 
@@ -26,6 +28,10 @@ namespace LemonadeStand_Pat
             weatherConditions.Add("rainy");
             weatherConditions.Add("sunny");
            
+        }
+        public void SelectTemperature()
+        {
+
         }
         
     }
