@@ -11,13 +11,21 @@ namespace LemonadeStand_Pat
         // member variables (HAS A)
         public Inventory inventory;
         public Wallet wallet;
-
+        Store store;
+        
+        
         // constructor (SPAWNER)
         public Player()
         {
             inventory = new Inventory();
             wallet = new Wallet();
+            store = new Store();
+         
+
+           
         }
+
+
 
         // member methods (CAN DO)
     }

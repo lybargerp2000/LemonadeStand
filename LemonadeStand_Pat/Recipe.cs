@@ -16,6 +16,9 @@ namespace LemonadeStand_Pat
         public Recipe()
         {
             PricePerCup = 1.5;
+            lemonQuantity = 3;
+            sugarCubeQuantity = 5;
+            iceCubeQuantity = 10;
             return;
         }
 

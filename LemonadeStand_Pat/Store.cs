@@ -78,5 +78,9 @@ namespace LemonadeStand_Pat
         {
             wallet.PayMoneyForItems(transactionAmount);
         }
+        public void RunStore()
+        {
+          
+        }
     }
 }
