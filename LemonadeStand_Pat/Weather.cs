@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_Pat
 {
-    class Weather
+    public class Weather
     {
         public string weatherCondition;
         public int temperature;
@@ -17,9 +17,9 @@ namespace LemonadeStand_Pat
 
         public Weather()
         {
-            weatherConditions = new List<string>{"cloudy, rainy, sunny"};
+            weatherConditions = new List<string>{"cloudy", "rainy", "sunny"};
 
-           
+
             GenerateWeather();
             TemperatureGenerator();
           
@@ -28,7 +28,7 @@ namespace LemonadeStand_Pat
 
         public void GenerateWeather()
         {
-            int val = random.Next(0, 2);
+            int val = random.Next(0, 3);
             weatherCondition = weatherConditions[val];
             Console.WriteLine(val);
             Console.ReadLine();

@@ -24,23 +24,7 @@ namespace LemonadeStand_Pat
             return;
         }
 
-        public void CustomerDesireOutcome()
-        {
-            if (PricePerCup < 1.0 && weatherCondition == "sunny" && temperature > 85)
-            {
-                cup.CupGetBought();
-            }
-            else if (PricePerCup > 1.0 && weatherCondition == "cloudy" && temperature < 85)
-            {
-             
-            }
-            else if (PricePerCup > 1.0 && weatherCondition == "rainy" && temperature < 85)
-            {
-
-            }
-            Console.WriteLine(cup);
-        }
-
+        
 
 
 
