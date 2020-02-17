@@ -17,20 +17,12 @@ namespace LemonadeStand_Pat
 
         public Customer()
         {
-            customers = new List<string>();
+            customers = new List<string>() { "Keith, Kevin, Sue" };
             cup = new Cup();
             return;
         }
 
-        public void Customers()
-        {
-            customers.Add("Keith");
-            customers.Add("Kevin");
-            customers.Add("Sue");
-        }
-
-
-
+  
         public void CustomerAction()
         {
            cup.CupGetBought();

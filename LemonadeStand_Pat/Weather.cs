@@ -12,39 +12,34 @@ namespace LemonadeStand_Pat
         public int temperature;
         public List<string> weatherConditions;
         string weatherGenerated;
-        Random weatherChoosen = new Random();
+        Random random = new Random();
 
 
         public Weather()
         {
-            weatherConditions = new List<string>();
-            
-     
-            GenerateWeather();
+            weatherConditions = new List<string>{"cloudy, rainy, sunny"};
 
-            
-
-
-        }
-
-        public void WeatherCondition()
-        {
-            weatherConditions.Add("cloudy");
-            weatherConditions.Add("rainy");
-            weatherConditions.Add("sunny");
            
+            GenerateWeather();
+            TemperatureGenerator();
+          
         }
+
+
         public void GenerateWeather()
         {
-            int val = weatherChoosen.Next(0, 17);
+            int val = random.Next(0, 2);
             weatherCondition = weatherConditions[val];
             Console.WriteLine(val);
             Console.ReadLine();
+            
 
         }
         public void TemperatureGenerator()
         {
-
+            temperature = random.Next(65, 95);
+            Console.WriteLine(temperature);
+            Console.ReadLine();
         }
         
     }
