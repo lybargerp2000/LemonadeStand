@@ -85,6 +85,10 @@ namespace LemonadeStand_Pat
         public void RunStore(Player player)
         {
             SellLemons(player);
+            SellSugarCubes(player);
+            SellIceCubes(player);
+            SellCups(player);
+
             
         }
     }
