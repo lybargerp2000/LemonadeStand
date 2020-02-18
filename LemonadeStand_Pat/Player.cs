@@ -12,6 +12,8 @@ namespace LemonadeStand_Pat
         public Inventory inventory;
         public Wallet wallet;
         public Recipe recipe;
+        public Pitcher pitcher;
+
         //Store store;
         
         
@@ -20,8 +22,10 @@ namespace LemonadeStand_Pat
         {
             inventory = new Inventory();
             wallet = new Wallet();
+            pitcher = new Pitcher();
             recipe = new Recipe();
-         
+
+
             return;
             //store = new Store();
             

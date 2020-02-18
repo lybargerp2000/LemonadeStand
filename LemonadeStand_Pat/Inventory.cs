@@ -30,7 +30,7 @@ namespace LemonadeStand_Pat
             {
                 Lemon lemon = new Lemon();
                 lemons.Add(lemon);
-                Console.WriteLine(lemon);
+                
                 
             }
         }

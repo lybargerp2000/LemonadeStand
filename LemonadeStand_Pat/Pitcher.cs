@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_Pat
 {
-    class Pitcher
+    public class Pitcher
     {
         int cupsInPitcher;
         Recipe recipe;
@@ -15,8 +15,9 @@ namespace LemonadeStand_Pat
 
         public Pitcher()
         {
+            
             cupsInPitcher = 5;
-            recipe = new Recipe();
+            return;
         }
 
 
