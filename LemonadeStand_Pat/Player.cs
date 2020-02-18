@@ -21,6 +21,7 @@ namespace LemonadeStand_Pat
             inventory = new Inventory();
             wallet = new Wallet();
             recipe = new Recipe();
+         
             return;
             //store = new Store();
             

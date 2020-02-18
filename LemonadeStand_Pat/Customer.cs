@@ -9,7 +9,9 @@ namespace LemonadeStand_Pat
     class Customer
     {
         public List<string> customers;
-  
+
+        Recipe PricePerCup;
+        Weather weatherCondition;
      
        
 
@@ -24,6 +26,7 @@ namespace LemonadeStand_Pat
         public Customer()
         {
             customers = new List<string>() {"Sue", "Sam", "Fred", "Doug", "Greg", "Patrick"};
+            SetValueToCustomers();
 
 
             //cup = new Cup();
@@ -71,6 +74,13 @@ namespace LemonadeStand_Pat
             }
             return false;
         
+        }
+
+        public void SetValueToCustomers()
+        {
+            CustomerDesireOutcomeOne(weatherCondition, PricePerCup);
+
+            
         }
 
         //public void CustomerAssighnmentOne()
