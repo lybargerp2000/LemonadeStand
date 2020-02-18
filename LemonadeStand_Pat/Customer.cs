@@ -9,9 +9,10 @@ namespace LemonadeStand_Pat
     class Customer
     {
         public List<string> customers;
-        Recipe PricePerCup;
-        Weather weatherCondition;
-        Recipe recipe;
+        public string weatherCondition;
+        public double PricePerCup;
+    
+        
         
   
 
@@ -29,7 +30,7 @@ namespace LemonadeStand_Pat
         {
             customers = new List<string>() { "Sue", "Sam", "Fred", "Doug", "Greg", "Patrick" };
           
-            CustomerDesireOutcomeOne(weatherCondition, PricePerCup);
+            CustomerDesireOutcomeOne("sunny", 1.5);
 
 
             //cup = new Cup();

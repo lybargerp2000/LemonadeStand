@@ -9,8 +9,8 @@ namespace LemonadeStand_Pat
     public class Pitcher
     {
         int cupsInPitcher;
-        Recipe recipe;
-        Customer customer;
+       
+       
        
 
         public Pitcher()
