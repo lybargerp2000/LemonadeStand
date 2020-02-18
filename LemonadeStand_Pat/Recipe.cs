@@ -6,21 +6,34 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_Pat
 {
-    class Recipe
+    public class Recipe
     {
         public int lemonQuantity;
         public int sugarCubeQuantity;
         public int iceCubeQuantity;
         public double PricePerCup;
+        Inventory inventory;
+
+      
+
 
         public Recipe()
         {
+
             PricePerCup = 1.5;
             lemonQuantity = 3;
             sugarCubeQuantity = 5;
             iceCubeQuantity = 10;
+
             return;
         }
+        //public int UpdateQuantityOfItems(Inventory inventory)
+        //{
+        //    lemonQuantity = inventory.lemons;
+
+
+        //}
+     
 
 
 

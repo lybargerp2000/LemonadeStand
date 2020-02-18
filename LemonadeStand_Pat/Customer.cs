@@ -9,8 +9,8 @@ namespace LemonadeStand_Pat
     class Customer
     {
         public List<string> customers;
-        string name;
-        int i;
+  
+     
        
 
         // double PricePerCup;
