@@ -32,6 +32,7 @@ namespace LemonadeStand_Pat
             weatherCondition = weatherConditions[val];
             Console.WriteLine(val);
             Console.ReadLine();
+            return;
             
 
         }
@@ -40,6 +41,7 @@ namespace LemonadeStand_Pat
             temperature = random.Next(65, 95);
             Console.WriteLine(temperature);
             Console.ReadLine();
+            return;
         }
         
     }

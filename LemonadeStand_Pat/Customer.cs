@@ -10,6 +10,9 @@ namespace LemonadeStand_Pat
     {
         public List<string> customers;
         string name;
+        Weather weather;
+        Recipe recipe;
+
         // double PricePerCup;
         // Cup cup;
         // public Weather weather;
@@ -22,32 +25,34 @@ namespace LemonadeStand_Pat
         {
             customers = new List<string>() {"" +20};
 
-            cup = new Cup();
+            //cup = new Cup();
             // weather = new Weather();
 
             return;
         }
 
   
-        public void CustomerAction()
-        {
+        //public void CustomerAction()
+        //{
           
-        }
-        public bool CustomerDesireOutcomeOne(Weather weather, double price)
+        //}
+        public bool CustomerDesireOutcomeOne(Weather weather, Recipe recipe)
         {
-            if (price < 1.0 && weather.weatherCondition == "sunny" && weather.temperature > 85)
+            if (recipe.PricePerCup < 1.0 && weather.weatherCondition == "sunny" && weather.temperature > 85)
             {
                 return true;
+                
             }
-            else if (price > 1.0 && weather.weatherCondition == "cloudy" && weather.temperature < 85)
+            else if (recipe.PricePerCup > 1.0 && weather.weatherCondition == "cloudy" && weather.temperature < 85)
             {
-
+                return false;
             }
-            else if (price > 1.0 && weather.weatherCondition == "rainy" && weather.temperature < 85)
+            else if (recipe.PricePerCup > 1.0 && weather.weatherCondition == "rainy" && weather.temperature < 85)
             {
-
+                return false;
             }
             Console.WriteLine();
+            
         }
         public void CustomerDesireOutcomeTwo()
         {
@@ -63,13 +68,13 @@ namespace LemonadeStand_Pat
             {
 
             }
-            Console.WriteLine(cup);
+            //Console.WriteLine(cup);
         }
 
-        public void CustomerAssighnmentOne()
-        {
+        //public void CustomerAssighnmentOne()
+        //{
          
-        }
+        //}
 
 
 

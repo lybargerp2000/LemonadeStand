@@ -11,10 +11,12 @@ namespace LemonadeStand_Pat
         Weather weather;
         Player player;
         Store store;
+        Day day;
         public Game()
         {
-            weather = new Weather();
             player = new Player();
+            day = new Day();
+          
             store = new Store();
 
            

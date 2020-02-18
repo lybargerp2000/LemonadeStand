@@ -11,6 +11,7 @@ namespace LemonadeStand_Pat
         // member variables (HAS A)
         public Inventory inventory;
         public Wallet wallet;
+        public Recipe recipe;
         //Store store;
         
         
@@ -19,6 +20,8 @@ namespace LemonadeStand_Pat
         {
             inventory = new Inventory();
             wallet = new Wallet();
+            recipe = new Recipe();
+            return;
             //store = new Store();
             
          

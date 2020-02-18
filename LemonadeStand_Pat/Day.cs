@@ -9,7 +9,7 @@ namespace LemonadeStand_Pat
     class Day
     {
         public Weather weather;
-        public List<Customer> customers;
+        public Customer customers;
         public double PricePerCup;
         public string weatherCondition;
         int numberOfDays;
@@ -19,7 +19,7 @@ namespace LemonadeStand_Pat
         public Day()
         {
             weather = new Weather();
-            customers = new List<Customer>();
+            customers = new Customer();
            
             return;
         }
