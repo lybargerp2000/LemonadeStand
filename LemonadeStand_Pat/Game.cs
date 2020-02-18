@@ -13,18 +13,21 @@ namespace LemonadeStand_Pat
         Store store;
         public Game()
         {
-          
+            weather = new Weather();
+            player = new Player();
+            store = new Store();
+
+           
 
         }
 
 
         public void RunGame()
         {
-            weather = new Weather();
-            player = new Player();
-            store = new Store();
+            store.RunStore(player);
 
-            Random random = new Random();
+
+
         }
     }
 }

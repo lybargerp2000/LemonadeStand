@@ -10,11 +10,11 @@ namespace LemonadeStand_Pat
     {
         public List<string> customers;
         string name;
-        double PricePerCup;
-        Cup cup;
-        public Weather weather;
-        string weatherCondition;
-        int temperature;
+        // double PricePerCup;
+        // Cup cup;
+        // public Weather weather;
+        // string weatherCondition;
+        // int temperature;
      
   
 
@@ -23,7 +23,7 @@ namespace LemonadeStand_Pat
             customers = new List<string>() {"" +20};
 
             cup = new Cup();
-            weather = new Weather();
+            // weather = new Weather();
 
             return;
         }
@@ -31,23 +31,23 @@ namespace LemonadeStand_Pat
   
         public void CustomerAction()
         {
-           cup.CupGetBought();
+          
         }
-        public void CustomerDesireOutcomeOne()
+        public bool CustomerDesireOutcomeOne(Weather weather, double price)
         {
-            if (PricePerCup < 1.0 && weatherCondition == "sunny" && temperature > 85)
+            if (price < 1.0 && weather.weatherCondition == "sunny" && weather.temperature > 85)
             {
-                cup.CupGetBought();
+                return true;
             }
-            else if (PricePerCup > 1.0 && weatherCondition == "cloudy" && temperature < 85)
-            {
-
-            }
-            else if (PricePerCup > 1.0 && weatherCondition == "rainy" && temperature < 85)
+            else if (price > 1.0 && weather.weatherCondition == "cloudy" && weather.temperature < 85)
             {
 
             }
-            Console.WriteLine(cup);
+            else if (price > 1.0 && weather.weatherCondition == "rainy" && weather.temperature < 85)
+            {
+
+            }
+            Console.WriteLine();
         }
         public void CustomerDesireOutcomeTwo()
         {
