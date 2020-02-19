@@ -9,12 +9,15 @@ namespace LemonadeStand_Pat
     class Customer
     {
         public List<string> customers;
-        public string weatherCondition;
-        public double PricePerCup;
-    
-        
-        
-  
+        //public string weatherCondition;
+        //public double PricePerCup;
+      
+        public Recipe PricePerCup { get; }
+        public Weather weatherCondition { get; }
+
+
+
+
 
 
 
@@ -29,8 +32,9 @@ namespace LemonadeStand_Pat
         public Customer()
         {
             customers = new List<string>() { "Sue", "Sam", "Fred", "Doug", "Greg", "Patrick" };
+         
           
-            CustomerDesireOutcomeOne("sunny", 1.5);
+            CustomerDesireOutcomeOne(PricePerCup, weatherCondition);
 
 
             //cup = new Cup();
@@ -39,6 +43,8 @@ namespace LemonadeStand_Pat
             return;
         }
 
+  
+
 
 
 
@@ -46,7 +52,7 @@ namespace LemonadeStand_Pat
         //{
 
         //}
-        public bool CustomerDesireOutcomeOne(Weather weather, Recipe recipe)
+        public bool CustomerDesireOutcomeOne(Recipe recipe, Weather weather)
         {
             if (recipe.PricePerCup < 1.0 && weather.weatherCondition == "sunny" && weather.temperature > 85)
             {

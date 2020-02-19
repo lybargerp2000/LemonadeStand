@@ -24,6 +24,7 @@ namespace LemonadeStand_Pat
             lemonQuantity = 3;
             sugarCubeQuantity = 5;
             iceCubeQuantity = 10;
+            Console.WriteLine(PricePerCup);
 
             return;
         }

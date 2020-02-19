@@ -24,6 +24,7 @@ namespace LemonadeStand_Pat
             wallet = new Wallet();
             pitcher = new Pitcher();
             recipe = new Recipe();
+            Console.WriteLine();
 
             return;
            
