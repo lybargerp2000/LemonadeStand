@@ -29,7 +29,7 @@ namespace LemonadeStand_Pat
             int quantityOfItem = -1;
             while (!userInputIsAnInteger || quantityOfItem < 0)
             {
-                Console.WriteLine("How many" + AddItems + "would you like to add?");
+                Console.WriteLine("How many "  + AddItems +  " would you like to add to the pitcher?");
                 Console.WriteLine("Please enter a positive integer (or 0 to cancel):");
 
                 userInputIsAnInteger = Int32.TryParse(Console.ReadLine(), out quantityOfItem);

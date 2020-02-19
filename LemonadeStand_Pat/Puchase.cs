@@ -30,7 +30,7 @@ namespace LemonadeStand_Pat
             return false;
 
         }
-        public bool CustomerDesireOutcomeTwo(Weather weather, Recipe recipe)
+        public bool CustomerDesireOutcomeTwo(Recipe recipe, Weather weather)
         {
             if (recipe.PricePerCup < 1.5 && weather.weatherCondition == "sunny" && weather.temperature > 85)
             {

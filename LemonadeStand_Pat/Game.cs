@@ -34,9 +34,10 @@ namespace LemonadeStand_Pat
             myStore.RunStore(player1);
             player1.SetRecipe();
             purchase.CustomerDesireOutcomeOne(player1.recipe, day.weather);
+            purchase.CustomerDesireOutcomeTwo(player1.recipe, day.weather);
 
-            
-        
+
+
 
 
 

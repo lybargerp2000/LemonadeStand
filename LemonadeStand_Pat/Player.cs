@@ -24,21 +24,19 @@ namespace LemonadeStand_Pat
         {
             inventory = new Inventory();
             wallet = new Wallet();
-            pitcher = new Pitcher();
             recipe = new Recipe();
-            
+            pitcher = new Pitcher();
+
         }
 
         // member methods (CAN DO)
-        public void GoToStore()
-        {
-          
-        }
+  
         public void SetRecipe()
         {
             recipe.LemonsInPitcher();
             recipe.IceCubesInPitcher();
             recipe.SugarcubesInPitcher();
+           
         }
 
 

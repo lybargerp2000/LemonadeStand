@@ -16,16 +16,16 @@ namespace LemonadeStand_Pat
         public Cup()
         {
             name = "cup";
-            CupGetBought();
+            //CupGetBought();
         }
 
         // member methods (CAN DO)
-        public int CupGetBought()
-        {
-            cups--;
-            Console.WriteLine(cups);
-            return cups;
-        }
+        //public int CupGetBought()
+        //{
+        //    cups--;
+        //    Console.WriteLine(cups);
+        //    return cups;
+        //}
     }
 }
 

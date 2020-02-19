@@ -11,7 +11,6 @@ namespace LemonadeStand_Pat
         public string weatherCondition;
         public int temperature;
         public List<string> weatherConditions;
-        string weatherGenerated;
         Random random = new Random();
 
 
@@ -39,7 +38,7 @@ namespace LemonadeStand_Pat
         public void TemperatureGenerator()
         {
             temperature = random.Next(65, 95);
-            Console.WriteLine(temperature + " this is the temperature");
+            Console.WriteLine(temperature + " is the temperature in Fahrenheit");
             Console.ReadLine();
             return;
         }

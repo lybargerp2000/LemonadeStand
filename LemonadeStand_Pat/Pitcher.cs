@@ -9,7 +9,9 @@ namespace LemonadeStand_Pat
     public class Pitcher
     {
         int cupsInPitcher;
-       
+        int lemonsInPitcher;
+        int sugarCubesInPitcher;
+        int iceCubesInPitcher;
        
        
 
@@ -18,7 +20,10 @@ namespace LemonadeStand_Pat
             
             cupsInPitcher = 5;
             
+
+            
         }
+        
 
 
 
