@@ -13,10 +13,12 @@ namespace LemonadeStand_Pat
         public Wallet wallet;
         public Recipe recipe;
         public Pitcher pitcher;
+        public string player;
+
 
         //Store store;
-        
-        
+
+
         // constructor (SPAWNER)
         public Player()
         {
@@ -24,16 +26,20 @@ namespace LemonadeStand_Pat
             wallet = new Wallet();
             pitcher = new Pitcher();
             recipe = new Recipe();
-            Console.WriteLine();
-
-            //store = new Store();
 
         }
 
-        
-
-
-
         // member methods (CAN DO)
+        public void GoToStore()
+        {
+          
+        }
+        public void SetRecipe()
+        {
+         
+        }
+
+
+
     }
 }

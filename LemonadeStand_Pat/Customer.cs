@@ -30,7 +30,7 @@ namespace LemonadeStand_Pat
 
         public Customer()
         {
-            customers = new List<string>() { "Sue", "Sam", "Fred", "Doug", "Greg", "Patrick" };
+            customers = new List<string>() { "Sue", "Sam", "Fred", "Doug", "Greg", "Patrick", "Kelvin" };
          
           
             

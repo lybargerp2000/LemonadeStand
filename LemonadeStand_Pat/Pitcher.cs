@@ -17,7 +17,7 @@ namespace LemonadeStand_Pat
         {
             
             cupsInPitcher = 5;
-            return;
+            
         }
 
 

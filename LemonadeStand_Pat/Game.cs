@@ -9,26 +9,28 @@ namespace LemonadeStand_Pat
     public class Game
     {
         Weather weather;
-        Player player;
-        Store store;
+        Player player1;
+        Store myStore;
         Day day;
         int numberOfDays;
         public List<string> days;
         public Game()
         {
-            player = new Player();
+            player1 = new Player();
             days = new List<string>() { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Friday" };
-
-            store = new Store();
-
-
+            myStore = new Store();
+            
 
         }
+        
 
 
         public void RunGame()
         {
-            store.RunStore(player);
+            Console.WriteLine(player1.inventory.lemons.Count);
+            myStore.RunStore(player1);
+            
+        
 
 
 

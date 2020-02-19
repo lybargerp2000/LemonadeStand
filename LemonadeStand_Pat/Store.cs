@@ -13,8 +13,9 @@ namespace LemonadeStand_Pat
         private double pricePerSugarCube;
         private double pricePerIceCube;
         private double pricePerCup;
-        Player player;
-        Wallet wallet;
+   
+       
+
 
         // constructor (SPAWNER)
         public Store()
@@ -23,8 +24,8 @@ namespace LemonadeStand_Pat
             pricePerSugarCube = .1;
             pricePerIceCube = .01;
             pricePerCup = .25;
-            
-            // RunStore();
+   
+
         }
 
         // member methods (CAN DO)

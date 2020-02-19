@@ -20,11 +20,11 @@ namespace LemonadeStand_Pat
         public Recipe()
         {
 
-            PricePerCup = 1.5;
-            lemonQuantity = 3;
-            sugarCubeQuantity = 5;
-            iceCubeQuantity = 10;
-            Console.WriteLine(PricePerCup);
+            PricePerCup = 0;
+            lemonQuantity = 0;
+            sugarCubeQuantity = 0;
+            iceCubeQuantity = 0;
+          
 
             
         }
