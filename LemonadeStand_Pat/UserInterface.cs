@@ -34,6 +34,7 @@ namespace LemonadeStand_Pat
 
                 userInputIsAnInteger = Int32.TryParse(Console.ReadLine(), out quantityOfItem);
             }
+            return quantityOfItem;
         }
     }
 }

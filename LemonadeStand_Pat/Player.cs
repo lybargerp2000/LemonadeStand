@@ -13,7 +13,7 @@ namespace LemonadeStand_Pat
         public Wallet wallet;
         public Recipe recipe;
         public Pitcher pitcher;
-        public string player;
+        
 
 
         //Store store;
@@ -26,7 +26,7 @@ namespace LemonadeStand_Pat
             wallet = new Wallet();
             pitcher = new Pitcher();
             recipe = new Recipe();
-
+            
         }
 
         // member methods (CAN DO)
@@ -36,7 +36,9 @@ namespace LemonadeStand_Pat
         }
         public void SetRecipe()
         {
-         
+            recipe.LemonsInPitcher();
+            recipe.IceCubesInPitcher();
+            recipe.SugarcubesInPitcher();
         }
 
 

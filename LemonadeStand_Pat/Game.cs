@@ -8,7 +8,7 @@ namespace LemonadeStand_Pat
 {
     public class Game
     {
-        Weather weather;
+        
         Player player1;
         Store myStore;
         Day day;
@@ -17,8 +17,9 @@ namespace LemonadeStand_Pat
         public Game()
         {
             player1 = new Player();
-            days = new List<string>() { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Friday" };
+           
             myStore = new Store();
+            day = new Day();
             
 
         }
@@ -27,8 +28,10 @@ namespace LemonadeStand_Pat
 
         public void RunGame()
         {
-            Console.WriteLine(player1.inventory.lemons.Count);
+            //Console.WriteLine(player1.inventory.lemons.Count);
             myStore.RunStore(player1);
+            player1.SetRecipe();
+
             
         
 

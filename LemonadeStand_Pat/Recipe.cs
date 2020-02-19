@@ -12,7 +12,7 @@ namespace LemonadeStand_Pat
         public int sugarCubeQuantity;
         public int iceCubeQuantity;
         public double PricePerCup;
-        Inventory inventory;
+   
 
       
 
@@ -20,21 +20,44 @@ namespace LemonadeStand_Pat
         public Recipe()
         {
 
-            PricePerCup = 0;
+            PricePerCup = 1;
             lemonQuantity = 0;
             sugarCubeQuantity = 0;
             iceCubeQuantity = 0;
+            
           
 
             
         }
+
+        public void LemonsInPitcher()
+        {
+            lemonQuantity = UserInterface.MakeRecipe("lemons");
+           
+
+        }
+
+        public void SugarcubesInPitcher()
+        {
+            sugarCubeQuantity = UserInterface.MakeRecipe("sugar cubes");
+
+
+        }
+        public void IceCubesInPitcher()
+        {
+            iceCubeQuantity = UserInterface.MakeRecipe("ice cubes");
+
+
+        }
+
+ 
         //public int UpdateQuantityOfItems(Inventory inventory)
         //{
         //    lemonQuantity = inventory.lemons;
 
 
         //}
-     
+
 
 
 

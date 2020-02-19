@@ -30,7 +30,7 @@ namespace LemonadeStand_Pat
         {
             int val = random.Next(0, 3);
             weatherCondition = weatherConditions[val];
-            Console.WriteLine(val);
+            Console.WriteLine(val + ". 0 is cloudy, 1 is rainy, 2 is sunny");
             Console.ReadLine();
             return;
             
@@ -39,7 +39,7 @@ namespace LemonadeStand_Pat
         public void TemperatureGenerator()
         {
             temperature = random.Next(65, 95);
-            Console.WriteLine(temperature);
+            Console.WriteLine(temperature + " this is the temperature");
             Console.ReadLine();
             return;
         }
