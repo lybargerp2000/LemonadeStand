@@ -20,7 +20,7 @@ namespace LemonadeStand_Pat
         public Recipe()
         {
 
-            PricePerCup = 1;
+            PricePerCup = .5;
             lemonQuantity = 0;
             sugarCubeQuantity = 0;
             iceCubeQuantity = 0;
