@@ -12,14 +12,16 @@ namespace LemonadeStand_Pat
         Player player;
         Store store;
         Day day;
+        int numberOfDays;
+        public List<string> days;
         public Game()
         {
             player = new Player();
-            day = new Day();
-          
+            days = new List<string>() { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Friday" };
+
             store = new Store();
 
-           
+
 
         }
 
@@ -30,6 +32,30 @@ namespace LemonadeStand_Pat
 
 
 
+
         }
+
+        public void NumberOfDays()
+        {
+            numberOfDays = 7;
+        }
+
+        public void DecreaseDays()
+        {
+            numberOfDays--;
+        }
+
+        public void RunDay()
+        {
+
+            NumberOfDays();
+
+            while (numberOfDays <= 7)
+            {
+                DecreaseDays();
+                RunDay();
+            }
+        }
+
     }
 }

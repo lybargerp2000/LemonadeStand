@@ -26,7 +26,7 @@ namespace LemonadeStand_Pat
             iceCubeQuantity = 10;
             Console.WriteLine(PricePerCup);
 
-            return;
+            
         }
         //public int UpdateQuantityOfItems(Inventory inventory)
         //{

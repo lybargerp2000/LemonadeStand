@@ -13,41 +13,15 @@ namespace LemonadeStand_Pat
         public double PricePerCup;
         public string weatherCondition;
         int numberOfDays;
-       
+
 
 
         public Day()
         {
             weather = new Weather();
             customers = new Customer();
-           
+
             return;
-        }
-
-        public void NumberOfDays()
-        {
-            numberOfDays = 7;
-        }
-
-        public void DecreaseDays()
-        {
-            numberOfDays--;
-        }
-
-        public void RunDay()
-        {
-
-            NumberOfDays();
-
-         while (numberOfDays <= 7)
-            {
-                DecreaseDays();
-                RunDay();
-            }
-
-
-
-
         }
 
         

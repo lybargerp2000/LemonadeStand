@@ -26,12 +26,7 @@ namespace LemonadeStand_Pat
             recipe = new Recipe();
             Console.WriteLine();
 
-            return;
-           
             //store = new Store();
-
-
-
 
         }
 

@@ -11,9 +11,8 @@ namespace LemonadeStand_Pat
         public List<string> customers;
         //public string weatherCondition;
         //public double PricePerCup;
-      
-        public Recipe PricePerCup { get; }
-        public Weather weatherCondition { get; }
+     
+    
 
 
 
@@ -34,13 +33,13 @@ namespace LemonadeStand_Pat
             customers = new List<string>() { "Sue", "Sam", "Fred", "Doug", "Greg", "Patrick" };
          
           
-            CustomerDesireOutcomeOne(PricePerCup, weatherCondition);
+            
 
 
             //cup = new Cup();
             // weather = new Weather();
 
-            return;
+            
         }
 
   
@@ -87,6 +86,7 @@ namespace LemonadeStand_Pat
             return false;
 
         }
+
 
 
 
