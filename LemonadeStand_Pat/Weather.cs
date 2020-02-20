@@ -29,7 +29,7 @@ namespace LemonadeStand_Pat
         {
             int val = random.Next(0, 3);
             weatherCondition = weatherConditions[val];
-            Console.WriteLine(val + ". 0 is cloudy, 1 is rainy, 2 is sunny");
+            Console.WriteLine(val +"  this number translates to 0 is cloudy, 1 is rainy, 2 is sunny");
             
             
             

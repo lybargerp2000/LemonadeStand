@@ -13,31 +13,30 @@ namespace LemonadeStand_Pat
         Store myStore;
         Day day;
         public Purchase purchase;
-        int numberOfDays;
         public List<string> days;
+        int numberOfDays;
         public Game()
         {
             player1 = new Player();
             myStore = new Store();
             day = new Day();
             purchase = new Purchase();
+            numberOfDays = 7;
            
         }
         
         public void RunGame()
         {
-            
+
             myStore.RunStore(player1);
             player1.SetRecipe();
             purchase.CustomerDesireOutcomeOne(player1.recipe, day.weather, day.customers);
             purchase.CustomerDesireOutcomeTwo(player1.recipe, day.weather, day.customers);
             player1.CupGetBought(purchase);
+            RunDay();
         }
 
-        public void NumberOfDays()
-        {
-            numberOfDays = 7;
-        }
+     
 
         public void DecreaseDays()
         {
@@ -46,13 +45,19 @@ namespace LemonadeStand_Pat
 
         public void RunDay()
         {
+            day.weather.GenerateWeather();
+            day.weather.TemperatureGenerator();
 
-            NumberOfDays();
 
-            while (numberOfDays <= 7)
+
+
+            while (numberOfDays >= 0)
             {
+
                 DecreaseDays();
-                RunDay();
+                RunGame();
+                
+
             }
         }
 
