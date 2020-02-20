@@ -12,7 +12,7 @@ namespace LemonadeStand_Pat
         Player player1;
         Store myStore;
         Day day;
-        Puchase purchase;
+        public Purchase purchase;
         int numberOfDays;
         public List<string> days;
         public Game()
@@ -20,10 +20,8 @@ namespace LemonadeStand_Pat
             player1 = new Player();
             myStore = new Store();
             day = new Day();
-            purchase = new Puchase();
-            
-            
-
+            purchase = new Purchase();
+           
         }
         
 
@@ -35,13 +33,7 @@ namespace LemonadeStand_Pat
             player1.SetRecipe();
             purchase.CustomerDesireOutcomeOne(player1.recipe, day.weather, day.customers);
             purchase.CustomerDesireOutcomeTwo(player1.recipe, day.weather, day.customers);
-
-
-
-
-
-
-
+            player1.CupGetBought(purchase);
         }
 
         public void NumberOfDays()

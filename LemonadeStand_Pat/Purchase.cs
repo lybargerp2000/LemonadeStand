@@ -6,45 +6,46 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_Pat
 {
-    class Puchase
+    public class Purchase
     {
-        public Puchase()
+        public bool cupIsPurchased;
+        public Purchase()
         {
-         
+            cupIsPurchased = false;
         }
         public bool CustomerDesireOutcomeOne(Recipe recipe, Weather weather, Customer customer)
         {
             if (recipe.PricePerCup < 5.0 && weather.weatherCondition == "sunny" && weather.temperature > 85 && customer.customer == "sam")
             {
-                return true;
+                return cupIsPurchased = true;
 
             }
             else if (recipe.PricePerCup > 5.0 && weather.weatherCondition == "cloudy" && weather.temperature < 85 && customer.customer == "Kelvin")
             {
-                return true;
+                return cupIsPurchased = true;
             }
             else if (recipe.PricePerCup > 5.0 && weather.weatherCondition == "rainy" && weather.temperature < 85 && customer.customer == "Doug")
             {
-                return true;
+                return cupIsPurchased = true;
             }
-            return false;
+            return cupIsPurchased = false;
 
         }
         public bool CustomerDesireOutcomeTwo(Recipe recipe, Weather weather, Customer customer)
         {
             if (recipe.PricePerCup < 5.0 && weather.weatherCondition == "sunny" && weather.temperature > 85 && customer.customer == "Patrick")
             {
-                return true;
+                return cupIsPurchased = true;
             }
             else if (recipe.PricePerCup > 5.0 && weather.weatherCondition == "cloudy" && weather.temperature < 85 && customer.customer == "Greg")
             {
-                return true;
+                return cupIsPurchased = true;
             }
             else if (recipe.PricePerCup > 5.0 && weather.weatherCondition == "rainy" && weather.temperature < 85 && customer.customer == "Fred")
             {
-                return true;
+                return cupIsPurchased = true;
             }
-            return false;
+            return cupIsPurchased = false;
 
         }
 

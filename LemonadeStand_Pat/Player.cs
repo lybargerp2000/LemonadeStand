@@ -38,6 +38,14 @@ namespace LemonadeStand_Pat
             recipe.SugarcubesInPitcher();
            
         }
+        public void CupGetBought(Purchase purchase)
+        {
+         if (purchase.cupIsPurchased == true)
+            {
+                pitcher.cupsInPitcher--;
+            }
+
+        }
 
 
 

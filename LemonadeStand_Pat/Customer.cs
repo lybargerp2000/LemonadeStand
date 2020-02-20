@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_Pat
 {
-    class Customer
+    public class Customer
     {
         public List<string> customers;
         public string customer;
@@ -23,9 +23,6 @@ namespace LemonadeStand_Pat
             int val = random.Next(0, 7);
             customer = customers[val];
             Console.WriteLine(val);
-
-            return;
-
 
         }
 
