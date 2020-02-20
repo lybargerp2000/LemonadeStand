@@ -8,16 +8,12 @@ namespace LemonadeStand_Pat
 {
     class Store
     {
-        // member variables (HAS A)
+  
         private double pricePerLemon;
         private double pricePerSugarCube;
         private double pricePerIceCube;
         private double pricePerCup;
    
-       
-
-
-        // constructor (SPAWNER)
         public Store()
         {
             pricePerLemon = .5;
@@ -28,7 +24,7 @@ namespace LemonadeStand_Pat
 
         }
 
-        // member methods (CAN DO)
+  
         public void SellLemons(Player player)
         {
             int lemonsToPurchase = UserInterface.GetNumberOfItems("lemons");

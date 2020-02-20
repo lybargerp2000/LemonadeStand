@@ -8,14 +8,11 @@ namespace LemonadeStand_Pat
 {
     class SugarCube : Item
     {
-        // member variables (HAS A)
-
-        // constructor (SPAWNER)
+     
         public SugarCube()
         {
             name = "sugar cube";
         }
 
-        // member methods (CAN DO)
     }
 }

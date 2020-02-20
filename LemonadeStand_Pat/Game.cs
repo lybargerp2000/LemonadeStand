@@ -24,8 +24,6 @@ namespace LemonadeStand_Pat
            
         }
         
-
-
         public void RunGame()
         {
             

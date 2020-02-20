@@ -51,16 +51,6 @@ namespace LemonadeStand_Pat
 
         }
 
- 
-        //public int UpdateQuantityOfItems(Inventory inventory)
-        //{
-        //    lemonQuantity = inventory.lemons;
-
-
-        //}
-
-
-
 
     }
 }

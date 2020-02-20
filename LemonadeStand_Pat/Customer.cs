@@ -26,19 +26,5 @@ namespace LemonadeStand_Pat
 
         }
 
-
-
-
-
-
-        //public void CustomerAction()
-        //{
-
-        //}
-
-
-
-
-
     }
 }

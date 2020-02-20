@@ -8,18 +8,12 @@ namespace LemonadeStand_Pat
 {
     class Player
     {
-        // member variables (HAS A)
+
         public Inventory inventory;
         public Wallet wallet;
         public Recipe recipe;
         public Pitcher pitcher;
         
-
-
-        //Store store;
-
-
-        // constructor (SPAWNER)
         public Player()
         {
             inventory = new Inventory();
@@ -29,7 +23,7 @@ namespace LemonadeStand_Pat
 
         }
 
-        // member methods (CAN DO)
+ 
   
         public void SetRecipe()
         {
@@ -38,6 +32,9 @@ namespace LemonadeStand_Pat
             recipe.SugarcubesInPitcher();
            
         }
+
+        //***Solid Single Responsibility Principle is applied below. This was the most basic method I wrote of a single method doing
+        // one thing only and doing well. An item is purchased and the value is decremented.***
         public void CupGetBought(Purchase purchase)
         {
          if (purchase.cupIsPurchased == true)

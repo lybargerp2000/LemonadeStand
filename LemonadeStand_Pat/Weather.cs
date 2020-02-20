@@ -31,7 +31,7 @@ namespace LemonadeStand_Pat
             weatherCondition = weatherConditions[val];
             Console.WriteLine(val + ". 0 is cloudy, 1 is rainy, 2 is sunny");
             
-            return;
+            
             
 
         }
@@ -40,7 +40,7 @@ namespace LemonadeStand_Pat
             temperature = random.Next(65, 95);
             Console.WriteLine(temperature + " is the temperature in Fahrenheit");
             
-            return;
+            
         }
         
     }
