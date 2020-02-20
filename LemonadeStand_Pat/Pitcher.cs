@@ -6,12 +6,10 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_Pat
 {
-    public class Pitcher
+    public class Pitcher : Recipe
     {
         int cupsInPitcher;
-        int lemonsInPitcher;
-        int sugarCubesInPitcher;
-        int iceCubesInPitcher;
+    
        
        
 

@@ -9,40 +9,27 @@ namespace LemonadeStand_Pat
     class Customer
     {
         public List<string> customers;
-        //public string weatherCondition;
-        //public double PricePerCup;
-     
-    
-
-
-
-
-
-
-
-        // double PricePerCup;
-        // Cup cup;
-        // public Weather weather;
-        // string weatherCondition;
-        // int temperature;
-
-
-
+        public string customer;
+        Random random = new Random();
+      
         public Customer()
         {
             customers = new List<string>() { "Sue", "Sam", "Fred", "Doug", "Greg", "Patrick", "Kelvin" };
          
           
-            
+        }
+        public void GenerateCustomer()
+        {
+            int val = random.Next(0, 7);
+            customer = customers[val];
+            Console.WriteLine(val);
+
+            return;
 
 
-            //cup = new Cup();
-            // weather = new Weather();
-
-            
         }
 
-  
+
 
 
 

@@ -10,8 +10,7 @@ namespace LemonadeStand_Pat
     {
         public Weather weather;
         public Customer customers;
-        public double PricePerCup;
-        public string weatherCondition;
+
         List<string> days;
 
 

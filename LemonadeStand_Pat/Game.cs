@@ -30,11 +30,11 @@ namespace LemonadeStand_Pat
 
         public void RunGame()
         {
-            //Console.WriteLine(player1.inventory.lemons.Count);
+            
             myStore.RunStore(player1);
             player1.SetRecipe();
-            purchase.CustomerDesireOutcomeOne(player1.recipe, day.weather);
-            purchase.CustomerDesireOutcomeTwo(player1.recipe, day.weather);
+            purchase.CustomerDesireOutcomeOne(player1.recipe, day.weather, day.customers);
+            purchase.CustomerDesireOutcomeTwo(player1.recipe, day.weather, day.customers);
 
 
 
