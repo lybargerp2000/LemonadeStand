@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LemonadeStand_Pat
 {
-    class Wallet
+    public class Wallet
     {
         private double money;
 
